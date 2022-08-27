@@ -22,7 +22,6 @@ const Courses = () => {
   }
 
   return (
-
     <Element name="courses" className="element">
       {/* balloon */}
       <div className="absolute left-0 top-80">
@@ -81,7 +80,7 @@ const Courses = () => {
           <button
             className="text-sm border-none py-1.5 px-5 mr-3 bg-secondary text-fourth rounded-md"
             onClick={() => {
-              location.href = course[value].link;
+              window.open(course[value].link, '_blank');
             }}
           >
             Get Started
